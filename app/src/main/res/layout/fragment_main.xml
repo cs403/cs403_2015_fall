@@ -119,11 +119,11 @@
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button12"
-        android:layout_alignTop="@+id/button11"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:text="@string/wzquresh_button_text"
+        android:id="@+id/wzqureshButton"
+        android:layout_below="@+id/button9"
+        android:layout_alignRight="@+id/button9"
+        android:layout_alignEnd="@+id/button9" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
