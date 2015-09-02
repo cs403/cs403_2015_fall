@@ -1,15 +1,21 @@
 package com.example.administrator.cs403fall2015;
 
+//Add import to include ViewPager
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
-
+    //Define mViewPager as a ViewPager object
+    ViewPager mViewPager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //Init mViewPager to default
+        mViewPager = new ViewPager(this);
         setContentView(R.layout.activity_main);
     }
 
@@ -34,5 +40,10 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void jumpToPage(View view) {
+        //Jump to a new view
+        mViewPager.setCurrentItem(1);
     }
 }
