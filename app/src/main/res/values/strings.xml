@@ -6,4 +6,5 @@
 <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="gpcorser_button_text">Prof. George Corser</string>
+    <string name="wzquresh_button_text">Waqas</string>
 </resources>
